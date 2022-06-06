@@ -33,3 +33,9 @@ print([movies + 'is played by ' + actress for (movies, actress) in d.items()])
 
 # ex5
 [print(x*100) if x%2==0 else print(x) for x in range(1,10)]
+
+# ex 6
+[print(x) if x%7!=0 else print("boom") for x in range(1,99)]
+# easy breasy
+
+# ex 7
