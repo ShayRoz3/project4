@@ -52,6 +52,15 @@ print(sum(10, 1))
 # she codes
 
 # ex8
-print([(x,y) for x in range(1,7) for y in range(1,9)])
+print([(x, y) for x in range(1, 7) for y in range(1, 9)])
 # she-codes
 
+# ex9
+jouls = [5000, 8000, 10000, 6000, 12000]
+[print(list(map(lambda x: (x, x / 4184), jouls)))]
+# done
+
+# ex 10
+languages = ["HTML", "JavaScript", "Python", "Ruby"]
+[print(list(filter(lambda x: x == "Python", languages)))]
+# half half me
