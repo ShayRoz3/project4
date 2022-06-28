@@ -26,19 +26,21 @@ num2roman(1917)
 
 # ex3
 def next_num(n):
-    num = " "
-    for j in range((n)[-1]):
-        for i in n:
-            num += str(i)
-            num = int(num)
-            num += 1
-            num = str(num)
-            ans = []
-            for i in num:
-                ans.append(int(i))
-            return ans
+    j = "".join(str(n))
+    print(j)
+    num = ""
+    for i in n:
+        num += str(i)
+        num = int(num)
+        num += 1
+        num = str(num)
+        ans = []
+        for i in num:
+            ans.append(int(i))
+            # ans.append(j)
+    return ans
+print(next_num([4, 3, 2, 1]))
+print(next_num([6,7,8]))
 
-print(next_num([5, 4, 3, 2, 1]))
-
-k=9
-print(range(k)[-1])
+k=[9,8,7]
+# print((k)[-1])
