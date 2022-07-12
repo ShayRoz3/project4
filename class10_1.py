@@ -5,7 +5,6 @@ def is_anagram(s, t):
     else:
         print(False, "- this is not an angram")
 
-
 is_anagram("listen", "silent")
 is_anagram("car", "cat")
 
@@ -25,22 +24,26 @@ num2roman(1917)
 # google way- want to do it on my own
 
 # ex3
-def next_num(n):
-    j = "".join(str(n))
-    print(j)
-    num = ""
-    for i in n:
-        num += str(i)
-        num = int(num)
-        num += 1
-        num = str(num)
-        ans = []
-        for i in num:
-            ans.append(int(i))
-            # ans.append(j)
-    return ans
-print(next_num([4, 3, 2, 1]))
-print(next_num([6,7,8]))
+def num_plus1(n):
+    if n [ -1 ] < 9 :
+        n [ -1 ] += 1
+    elif n [ -1 ] >= 9 :
+        n [ -1 ] = 0
+        n [ -2 ] += 1
+        if n [ -2 ] >= 9 :
+            n [ -2 ] = 0
+            n [ -3 ] += 1
+            if n [ -3 ] >= 9 :
+                n [ -3 ] = 0
+                n [ -4 ] += 1
 
-k=[9,8,7]
-# print((k)[-1])
+    return n
+print(num_plus1([1,9,9,9]))
+
+
+def is_work(k):
+    for i in k:
+        print(i, end= "")
+is_work([1,2,3,4])
+
+
