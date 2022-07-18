@@ -36,7 +36,6 @@ def num_plus1(n):
             if n [ -3 ] >= 9 :
                 n [ -3 ] = 0
                 n [ -4 ] += 1
-
     return n
 print(num_plus1([1,9,9,9]))
 
@@ -44,6 +43,17 @@ print(num_plus1([1,9,9,9]))
 def is_work(k):
     for i in k:
         print(i, end= "")
-is_work([1,2,3,4])
+is_work([1,2,3,9])
 
 
+l = [1, 9, 9]
+
+s = [str(integer) for integer in l]
+a_string = "".join(s)
+res = int(a_string)
+print(res)
+new = res + 1
+print(new)
+
+r2 = [int(y) for y in str(new)]
+print(r2)
