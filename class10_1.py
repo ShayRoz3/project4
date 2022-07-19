@@ -39,15 +39,16 @@ def num_plus1(n):
     return n
 print(num_plus1([1,9,9,9]))
 
-
-def is_work(k):
-    for i in k:
-        print(i, end= "")
-is_work([1,2,3,9])
-
+#
+# def is_work(k):
+#     for i in k:
+#         print(i, end= "")
+# is_work([1,2,3,9])
+#nice oprion- turn to int but dodn't worked out
 
 l = [1, 9, 9]
-
+l = [1,2,3,4]
+l = [1,2,3,4,5,6,7,8,9]
 s = [str(integer) for integer in l]
 a_string = "".join(s)
 res = int(a_string)
